@@ -45,8 +45,8 @@ class MovieTestWithMockHttpRequest {
     @Test
     void searchMovieByTitle() throws Exception {
         int expectedLength = 1;
-        Long expectedId = 3300L;
-        ResultActions resultActions = this.mockMvc.perform(MockMvcRequestBuilders.get("/movie/title?title=Pulp fiction")
+        Long expectedId = 3000L;
+        ResultActions resultActions = this.mockMvc.perform(MockMvcRequestBuilders.get("/movie/title?title=Inception")
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk());
