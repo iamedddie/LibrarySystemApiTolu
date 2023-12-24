@@ -114,7 +114,7 @@ class MovieServiceImplUnitTest {
         movieList.remove(movieToDelete);
         movieService.deleteMovie(movieToDelete.getId());
         int actualMovieList = movieList.size();
-        assertEquals(expectedMovieLengthAfterDeletion, actualMovieList);
+        assertEquals(expectedMovieLengthAfterDeletion, actualMovieList)
 
     }
 
